@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import processing.video.*;
 
 import processing.sound.*;
@@ -150,58 +149,3 @@ void mousePressed() {
 //    state="reset";
 //  }
 //}
-=======
-String state= "pregame";
-String trans= "transition";
-
-// images
-PImage tittle;
-PImage[] brokenTv = new PImage [10];
-
-void setup(){
- size (700, 700);
-   background(0);
-tittle = loadImage("t0.png");
-
-for (int i = 0; i < brokenTv.length; i++);
- brokenTv [0] = loadImage("bt" +0+".jpg");
-
-}
-
-void draw(){
-  textAlign(CENTER);
-  textSize (15);
-
-  if (state =="pregame"){
-    image(tittle,0,0);
-    text("click to start", width/2, 600);
-  }
-  
-  
-   else if (state=="game"){
-    background(0);
-    textSize (35);
-  text("PRAY", 175, height/2);
-  text("PREY", 525, height/2);
-  textSize (15);
-  text("CHOOSE YOUR DESTINY", width/2, 600);
- 
-  
-
-  }
-  
-  
-
-}
-    
-
-void mousePressed(){
-  if (state=="pregame"){
-    state="game";
-  }
-
-else if (state=="game over"){
-    state="pregame";
-}
-}
->>>>>>> origin/master
