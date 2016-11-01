@@ -3,11 +3,7 @@
 // when the mood reaches the center of the screen the sun will rise
 
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> origin/master
 //sun and sky
 float cirX = 60;
 float cirY = 60;
